@@ -13,6 +13,8 @@ Après une petite semaine d'apprentissage React, on passe à la pratique sur un 
 Pour y arriver, je vais me baser sur les vidéos Youtube suivante : https://www.youtube.com/watch?v=EHU_puh64Ew&list=PLprzxDsHXuDY2e1DlfZ0AZPuJXon8EkbJ&index=30
 
 => Toutefois, je vais me servir des vidéos comme base, mais je vais évidemment adapter et faire à ma sauce.
+ - Vite
+ - Bootstrap 5.3
 
 ### Let's go
 
