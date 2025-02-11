@@ -94,3 +94,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container input {
+  width: 50%;
+  border: 3px solid #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 10px;
+}

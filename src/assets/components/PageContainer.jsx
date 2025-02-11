@@ -9,10 +9,12 @@ export default function PageContainer() {
   return (
     <div>
         <Header />
-        <Search />
-        <CategorieList />
-        <AnimalItem />
-        <Pagination />
+        <div className='appContent'>
+          <Search />
+          <CategorieList />
+          <AnimalItem />
+          <Pagination />
+        </div>
     </div>
   )
 }
