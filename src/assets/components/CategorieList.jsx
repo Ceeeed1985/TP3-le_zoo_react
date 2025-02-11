@@ -1,13 +1,18 @@
-import React from 'react'
-import CategorieItem from './CategorieItem'
+import React, {useState} from 'react';
+import CategorieItem from './CategorieItem';
+import { animalsCats } from '../../../mocks/data-categories';
 
 export default function CategorieList() {
+
+  const [categories, setCategories] = useState(animalsCats);
+
   return (
     <>
-        <div><CategorieItem /></div>
-        <div><CategorieItem /></div>
-        <div><CategorieItem /></div>
-        <div><CategorieItem /></div>
+        <div className='categories_list'>
+          {categories.map((item)=>{
+            return <div className="categorie-item" key={item.id}>{item.nom}</div>
+          })}
+        </div>
     </>
-  )
+  );
 }
