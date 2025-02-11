@@ -1,9 +1,16 @@
 import React from 'react'
 
-export default function Pagination() {
+export default function Pagination({
+    currentPage,
+    totalPage,
+    handlePageSizeChange,
+    onPageChange,
+    setItemsPerPage,
+    itemsPerPage
+  }) {
   return (
     <div className='pagination'>
-      <select className='form-control size select'>
+      <select value={itemsPerPage} onChange={handlePageSizeChange} className='form-control size select'>
         <option value="5">5</option>
         <option value="10">10</option>
         <option value="15">15</option>
