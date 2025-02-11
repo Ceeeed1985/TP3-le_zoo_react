@@ -26,7 +26,10 @@ export default function PageContainer() {
     setAnimals(searchData(searchText));
   }
 
-  const handlePageChange = () => {};
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+  
   const handlePageSizeChange = (e) => {
     const perPage = e.target.value;
     setItemsPerPage(perPage);

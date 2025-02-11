@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Pagination({
     currentPage,
-    totalPage,
+    totalPages,
     handlePageSizeChange,
     onPageChange,
     setItemsPerPage,
@@ -17,11 +17,16 @@ export default function Pagination({
         <option value="20">20</option>
       </select>
 
-      <button className='btn'>1</button>
-      <button className='btn'>2</button>
-      <button className='btn active'>3</button>
-      <button className='btn'>4</button>
-      <button className='btn'>5</button>
+    {Array.from({length: totalPages}).map((_,index) => {
+      return <button
+        key={index}
+        className={currentPage === index + 1 ? 'active btn' : 'btn'}
+        onClick={() => onPageChange(index + 1)}
+        >
+          {index + 1}
+        </button>
+      })}
+
     </div>
   )
 }
